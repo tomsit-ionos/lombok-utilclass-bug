@@ -9,8 +9,7 @@ import org.junit.jupiter.api.Timeout;
 
 class TestcontainersTest {
 
-
-  @Timeout(value = 20)
+  @Timeout(value = 40) // passes (if static ) on mine machine in 18s
   @Test
   void dummyTest() {
     var keycloak = new KeycloakContainer("quay.io/keycloak/keycloak:26.0.5")

@@ -5,16 +5,16 @@ import lombok.experimental.UtilityClass;
 
 @Builder(toBuilder = true)
 public record OuterClass(
-        String foo
+    String foo
 
 ) {
 
-    @UtilityClass
-    public
-//    static
-    class InnerClass {
+  @UtilityClass
+  public
+//  static
+  class InnerClass {
 
-        public static final String BAR = "bar";
-    }
+    public static final String BAR = "bar";
+  }
 
 }
