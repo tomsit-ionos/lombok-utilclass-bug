@@ -1,3 +1,4 @@
 # lombok-utilclass-bug
 
-reproduces lombok bug with a nested @UtilityClass loaded by Keycloak
+reproduces lombok bug https://github.com/projectlombok/lombok/issues/3679 with a nested @UtilityClass 
+
