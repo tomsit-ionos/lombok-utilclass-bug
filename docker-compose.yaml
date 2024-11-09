@@ -1,0 +1,15 @@
+name: lombok-utilclass-bug
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.0.5
+
+    volumes:
+      # run `mvn package -DskipTests` beforehand
+      - ./target/lombok.utilclass-0.0.1-SNAPSHOT.jar:/opt/keycloak/providers/provider.jar
+    command: start-dev
+    environment:
+
+      KEYCLOAK_ADMIN: a
+      KEYCLOAK_ADMIN_PASSWORD: a
+      DEBUG: "true"
